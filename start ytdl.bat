@@ -1,0 +1,1 @@
+start /min python app.py
