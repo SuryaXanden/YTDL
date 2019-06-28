@@ -1,22 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YTDL</title>
+	<style>	
+		*{
+			color: white;
+			background-color: black;
+			text-align : center;
+			margin : 10;
+			padding : 10;
+			border-radius : 16px;
+		}
+		#url{
+			width : 24%;
+			padding : 8;
+			margin: 15;
+		}
+		h1{
+			font-size: 48;
+		}
+		#choice{
+			width : 16%;			
+		}
+		#Download{
+			width : 8%;
+		}
+	</style>
 </head>
+<h1>YTDL</h1>
 <body align="center">
-    <div>
-        <form method="POST">
-            <input type="text" name="url" placeholder="Enter the URL" id="url" required minlength="7" autocomplete="off">
-            <select name="choice" id="choice">
-                    <option value="audio"> Audio </option>
-                    <option value="video"> Video </option>
-            </select>
-            <br>
-            <input type="submit" value="Download" id="q">
-        </form>
-    </div>
+	<form method="POST">
+		<input type="text" name="url" id="url" placeholder="Enter the URL" required minlength="7" autocomplete="off">
+		<br>
+		<select name="choice" id="choice">
+			<option value="video"> Video </option>
+			<option value="audio"> Audio </option>
+		</select>
+		<br>
+		<input type="submit" value="Download" id="Download">
+	</form>
 </body>
-</html>
