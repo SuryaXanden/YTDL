@@ -11,7 +11,7 @@ Run the following command:
 
 python app.py
 
-Go to the following endpoint to access the web service:
+Endpoint to access the web service:
 ----------
 
 localhost/tube
